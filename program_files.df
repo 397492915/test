@@ -1,0 +1,6 @@
+FROM busybox:latest
+MAINTAINER "kevin@ifchange.com"
+ENV APPROOT="/opt/wwwroot" \
+    SRCROOT="./test"
+RUN mkdir -p ${APPROOT}
+ADD ${SRCROOT} ${APPROOT}

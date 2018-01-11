@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+MAINTAINER "kevin@ifchange.com"
+RUN apt-get update && \
+    apt-get install -y git
+ENTRYPOINT ["git"]

@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+MAINTAINER "kevin@ifchange.com"
+ADD ./main /
+ENTRYPOINT /main
+CMD /main
